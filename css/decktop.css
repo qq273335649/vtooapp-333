@@ -1,0 +1,272 @@
+@font-face {
+    font-family: PingFang Medium ;
+    src: url("../fonts/PingFang Medium.ttf");
+}
+
+@font-face {
+    font-family: PingFang Regular ;
+    src: url("../fonts/PingFang Regular.ttf");
+    }
+@font-face {
+    font-family: PingFang Medium ;
+    src: url("../fonts/PingFang Medium.ttf");
+    }
+
+	*{
+		margin:0;
+		padding:0;
+	}
+
+	body{
+		font:15px/1.3 'Open Sans', sans-serif;
+		text-align:center;
+      font-size:62.5%;
+      
+	}
+
+	a, a:visited {
+		outline:none;
+		color:#389dc1;
+	}
+
+	a:hover{
+		text-decoration:none;
+	}
+
+	section, footer, header, aside, nav{
+		display: block;
+	}
+
+	/*-------------------------
+		菜鸟
+	--------------------------*/
+
+	nav{
+		display:inline-block;
+		margin:60px auto 45px;
+		background-color:#5597b4;
+		box-shadow:0 1px 1px #ccc;
+		border-radius:2px;
+	}
+
+	nav a{
+		display:inline-block;
+		padding: 18px 30px;
+		color:#fff !important;
+		font-weight:bold;
+		font-size:16px;
+		text-decoration:none !important;
+		line-height:1;
+		text-transform: uppercase;
+		background-color:transparent;
+
+		-webkit-transition:background-color 0.25s;
+		-moz-transition:background-color 0.25s;
+		transition:background-color 0.25s;
+	}
+
+	nav a:first-child{
+		border-radius:2px 0 0 2px;
+	}
+
+	nav a:last-child{
+		border-radius:0 2px 2px 0;
+	}
+
+	nav.home .home,
+	nav.projects .projects,
+	nav.services .services,
+	nav.contact .contact{
+		background-color:#e35885;
+	}
+
+	p{
+		font-size:22px;
+		font-weight:bold;
+		color:#7d9098;
+	}
+
+	p b{
+		color:#ffffff;
+		display:inline-block;
+		padding:5px 10px;
+		background-color:#c4d7e0;
+		border-radius:2px;
+		text-transform:uppercase;
+		font-size:18px;
+	}
+	  .login_form {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .qxs-ic_user {
+    background-size: 13px 15px;
+    background-position: 3%;
+  }
+  .qxs-ic_password {
+    background-size: 0.13rem 0.15rem;
+    background-position: 3%;
+    
+  }
+  .qxs-ic_vertify {
+    background-size: 13px 15px;
+    background-position: 3%;
+    
+    
+  }
+  .login_logo {
+    height: 100%;
+  }
+  .login_btn {
+    width: 100%;
+    font-size: 16px;
+    background: -webkit-linear-gradient(left, #000099, #2154FA); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #000099, #2154FA); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #000099, #2154FA); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #000099 , #2154FA); /* 标准的语法 */
+    filter: brightness(1.4);
+  }
+  .text-size12px{
+  font-size: 12px;
+}
+.text-size14px{
+  font-size: 14px;
+}
+.text-size16px{
+  font-size: 16px;
+}
+.float-right {
+  float: right;
+}
+.item-color {
+  color: #848487;
+}
+
+
+
+
+.biaoti{
+  margin-top:0.3rem;
+  color: #FFFFFF;
+  font-size: 0.5rem;
+  position:relative;
+  font-family: PingFang Medium;
+}
+
+.xiayibu{
+margin-top: 0rem;
+margin-left:0.1rem;
+padding: 0.1rem;
+width: 0.7rem;
+height: 0.7rem;
+display:block;
+background: url(../img/xiayibu.png) no-repeat;
+background-size:100%;
+position:absolute;
+}
+
+#logo{
+  height:30%;
+  width:100%;
+  margin:0 auto;
+  padding:0;
+  display:block;
+  background:url(../img/logo.png) no-repeat;
+  background-size:100%;
+
+}
+.zhutilogo{
+  width: 80%;
+  height: 40%;
+  margin:0 auto;
+  padding:0;
+}
+
+
+.shuru{display:inline-block;padding:0.2rem 0rem;margin-bottom:8%;font-size:0.27rem;font-weight:400;line-height:1.42857143;text-align:center;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-image:none;border:1px solid transparent;border-radius:100px;background: #FFFFFF;}
+.btn01{display:inline-block;padding:0.12rem 0rem;margin-bottom:0;font-size:0.5rem;font-weight:400;line-height:1.42857143;text-align:center;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-image:none;border:1px solid transparent;border-radius:100px; font-family: PingFang Medium;}
+
+.tubiao{
+	font-size:0.3rem;
+}
+.srpos{
+	position:relative;
+  height: 10%;
+  width: 90%;
+  font-family: PingFang Medium;
+}
+.yzma{
+	float: right;
+	display: inline-block;
+	color: #5BC0DE;
+	border: 1px solid #5BC0DE;
+	border-radius: 30px;
+  	position:absolute;
+  	top:25%;
+  	right:7%;
+  	font-size:100%;
+	
+}
+.yzmatu{
+  	width:25%;
+  	height:90%;
+	position:absolute;
+  	top:5%;
+    right: 5%
+
+}
+
+.tubiao1{
+  height: 45%;
+  width: 0.55rem;
+  margin:0;
+  padding:0;
+  display:block;
+  position:absolute;
+  top:25%;
+  left:5%;
+  
+}
+
+.tubiao1 {
+	background-image: url(../img/shouji.png);
+	background-size: 100% 100%;
+}
+.tubiao2{
+  height:45%;
+  width: 0.47rem;
+  margin:0;
+  padding:0;
+  display:block;
+  background:url(../img/mima.png) no-repeat;
+  background-size:100%;
+  position:absolute;
+  top:25.5%;
+  left:5%;
+}
+.tubiao3{
+  height:45%;
+  width: 0.47rem;
+  margin:0;
+  padding:0;
+  display:block;
+  background:url(../img/yanzheng.png) no-repeat;
+  background-size:100%;
+  position:absolute;
+  top:25%;
+  left:5%;
+}
+
+
+
+
+
+
+
+.dibu{
+	font-size:0.3rem;
+  	margin-bottom:15%;
+  	font-family: PingFang Medium;
+}
+	

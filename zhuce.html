@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <script>!function(e){function t(a){if(i[a])return i[a].exports;var n=i[a]={exports:{},id:a,loaded:!1};return e[a].call(n.exports,n,n.exports,t),n.loaded=!0,n.exports}var i={};return t.m=e,t.c=i,t.p="",t(0)}([function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i=window;t["default"]=i.flex=function(normal,e,t){var a=e||100,n=t||1,r=i.document,o=navigator.userAgent,d=o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),l=o.match(/U3\/((\d+|\.){5,})/i),c=l&&parseInt(l[1].split(".").join(""),10)>=80,p=navigator.appVersion.match(/(iphone|ipad|ipod)/gi),s=i.devicePixelRatio||1;p||d&&d[1]>534||c||(s=1);var u=normal?1:1/s,m=r.querySelector('meta[name="viewport"]');m||(m=r.createElement("meta"),m.setAttribute("name","viewport"),r.head.appendChild(m)),m.setAttribute("content","width=device-width,user-scalable=no,initial-scale="+u+",maximum-scale="+u+",minimum-scale="+u),r.documentElement.style.fontSize=normal?"50px": a/2*s*n+"px"},e.exports=t["default"]}]);  flex(false,100, 1);</script>
+    <title>注册</title>
+    <link type="text/css" rel="stylesheet" href="css/decktop.css" />
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/character.css" />
+    <link type="text/css" rel="stylesheet" href="css/theme.css" />
+    
+    
+    <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+
+</head>
+
+<body style="background-color: #424955">
+	<div class="biaoti"><div class="xiayibu"></div>注册</div>
+
+<div>
+    <div class="zhutilogo">
+      <canvas id="logo"></canvas>
+    </div>
+    <div class="login_form">
+      <!--<div class="input-group">
+        <span class="input-group-addon">@</span>
+      	<input type="text" placeholder="请输入用户名" class="form-control" v-model="userName">
+      </div>-->
+      <div class="shuru btn-block srpos">
+        <div class="tubiao1"></div>
+         <input type="text"  class="qxs-ic_user qxs-icon"  placeholder="请输入手机号" v-model="userName">
+      </div>
+      	<div class="shuru btn-block srpos">
+    		<div class=tubiao3></div>
+      <input type="text"  class="qxs-ic_vertify qxs-icon"  placeholder="请输入验证码" v-model="password">
+      	<div class="yzma">发送验证码</div>
+      	</div>
+      <div class="shuru btn-block srpos">
+    		<div class="tubiao2"></div>
+      <input type="text"  class="qxs-ic_password qxs-icon"  placeholder="请输入密码" v-model="password">
+      	</div>
+      <!--<button class="login_btn el-button el-button&#45;&#45;primary is-round" type="primary" round>登录</button>-->
+      <el-button class="btn01 btn-success btn-block" @click.native="login" type="primary" round :loading="isBtnLoading">注册</el-button>
+      <div style="margin-top: 5%">
+        
+      </div>
+    </div>
+  </div>
+  </body>
