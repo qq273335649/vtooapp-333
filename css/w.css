@@ -427,6 +427,7 @@ span.jys{
 	float: left;
 	font-size: 12px;
 	padding: 5px;
+	padding-right: 6px;
 }
 .jy-btn{
 	position: absolute;
