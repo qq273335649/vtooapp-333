@@ -1,0 +1,26 @@
+.Wai-hbackgroud{
+	background: initial;
+}
+.Wai-hbackgroud .mui-table-view-cell.mui-collapse.mui-active{
+	height: 1000px;
+    z-index: 10;
+}
+.Wai-hbackgroud .wph .Wai_M{
+	height: auto;
+}
+.Wai-hbackgroud .wph .mui-table-view-cell.mui-collapse .mui-collapse-content{
+	padding-left: 10px;
+}
+.Wai-hbackgroud .new-zhezhao{
+	background-color: initial!important;
+}
+.Wai-hbackgroud .new-zhezhao p{
+	color: transparent;
+}
+.wairicon{
+	font-family: PingFang Regular;
+	font-size: 16px!important;
+	padding-top: 15px!important;
+	color: #E1E5F1!important;
+}
+

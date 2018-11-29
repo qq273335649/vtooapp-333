@@ -1,0 +1,191 @@
+@charset "utf-8";
+html,body,.mui-content{
+	background-color: #424955;
+}
+/* 邀请好友 */
+.invite_topIcon {
+    text-align: center;
+    margin-top: 25px;
+}
+.invite_topIcon img{
+	width: 45%;
+}
+.invite_code {
+    margin: 25px 30px 0;
+    background-color: #fff;
+    padding: 25px 45px 50px;
+    text-align: center;
+}
+.invite_code_tit {
+    font-family: PingFang Regular;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 25px;
+}
+.invite_code_no {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #e5e5e5;
+    color: #f3ba1d;
+    font-family: Arial;
+    font-weight: 600;
+    font-size: 1.3rem;
+	margin-bottom: 35px;
+}
+.invite_code_copyBtn {
+    width: 120px;
+    height: 40px;
+    padding: 0;
+    line-height: 40px;
+    border-radius: 0;
+    border: none;
+    background-color: #2bc276;
+    color: #fff;
+    font-size: 1rem;
+    font-family: PingFang Regular;
+}
+/* 激活会员 */
+.member_conBox_ul {
+    padding: 10px 16px 0px;
+}
+.member_conBox_ulist {
+    padding: 16px 0;
+    color: #fff;
+    font-family: PingFang Regular;
+    font-size: 1rem;
+    display: flex;
+	display: -webkit-flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #515762;
+}
+.member_conBox_ulist_badge {
+    color: #2bc276;
+    font-family: Arial;
+    font-size: 0.9rem;
+}
+.member_head_right{
+	position: absolute;
+    height: 26px;
+    width: 55px;
+    right: 0;
+    margin-right: 15px;
+    text-align: center;
+    line-height: 26px;
+    color: #fff;
+    font-family: PingFang Regular;
+    margin-bottom: 0;
+    margin-top: 9px;
+    border-radius: 8px;
+    background-color: #999;
+}
+.member_conUser {
+    padding: 5px 15px;
+}
+.member_conUser_list {
+    padding: 12px 0;
+    display: flex;
+	display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.member_conUser_left {
+    display: flex;
+	display: -webkit-flex;
+    align-items: center;
+}
+.member_conUser_left_photo {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+.member_conUser_left_photo img {
+    width: 100%;
+}
+.member_conUser_left_infor p {
+    margin-bottom: 0px;
+    color: #fff;
+    font-family: Arial;
+}
+.member_conUser_right_activate {
+    margin-bottom: 0;
+    width: 58px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 8px;
+    color: #fff;
+    font-family: PingFang Regular;
+}
+.no_activate{
+	background-color: #2bc276;
+}
+.activate{
+    background-color: #999;
+}
+/* 提交工单 */
+.submit_con{
+	padding: 0 16px;
+	padding-bottom: 20px;
+}
+.submit_topLogo {
+	padding-top: 10px;
+    padding-bottom: 19px;
+    border-bottom: 1px solid #515762;
+}
+.submit_topLogo img {
+    width: 50%;
+}
+.submit_conBox {
+    font-family: PingFang Regular;
+}
+.submit_conBox_tit {
+    margin-top: 19px;
+    font-size: 1.6rem;
+    margin-bottom: 19px;
+    color: #fff;
+}
+.submit_input_group {
+    font-size: 0.85rem;
+    color: #fff;
+}
+.submit_input_group_list label {
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.submit_input_group_list em {
+    font-style: normal;
+    display: inline-block;
+    height: 16px;
+    vertical-align: middle;
+    margin-left: 2px;
+    color: #ff0000;
+}
+.submit_input_group_list input {
+    border-radius: 0;
+    color: #666;
+    margin-bottom: 19px;
+}
+.submit_input_group_list textarea {
+    border-radius: 0;
+    height: 150px;
+    color: #666;
+    margin-bottom: 0;
+}
+.submit_down_note {
+    color: #fff;
+    font-size: 0.85rem;
+}
+.submit_btn{
+	margin-top: 60px;
+	width: 100%;
+	background-color: #2bc276 !important;
+	border: none !important;
+	color: #fff;
+	border-radius: 0;
+	padding: 10px 0 !important;
+	font-size: 1rem !important;
+	font-family: PingFang Regular;
+}

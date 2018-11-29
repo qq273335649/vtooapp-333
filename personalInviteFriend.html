@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="css/public.css"/>
+	<link rel="stylesheet" type="text/css" href="css/personalDetail.css"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-pull-left"><img src="img/head_back_icon.png" ></a>
+		<h1 class="mui-title">邀请好友</h1>
+	</header>
+	<div class="mui-content">
+		<div class="invite_con">
+			<div class="invite_topIcon">
+				<img src="img/invite_topIcon.png" />
+			</div>
+			<div class="invite_code">
+				<p class="invite_code_tit">邀请码</p>
+				<p class="invite_code_no">ASDFGHJKL</p>
+				<textarea id="invite_code_input" style="opacity: 0;position: absolute;"></textarea>
+				<button type="button" class="invite_code_copyBtn" onclick="copyText()">复制</button>
+			</div>
+		</div>
+	</div>
+	<script>
+		function copyText() {
+			var text = document.querySelector(".invite_code_no").innerText;
+			var input = document.getElementById("invite_code_input");
+			input.value = text; // 修改文本框的内容
+			input.select(); // 选中文本
+			document.execCommand("copy"); // 执行浏览器复制命令
+			mui.toast("复制成功");
+		}
+	</script>
+</body>
+</html>

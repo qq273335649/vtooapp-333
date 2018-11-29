@@ -1,0 +1,84 @@
+/* 引入字体包 */
+@font-face {
+    font-family: PingFang Medium;
+    src: url("../fonts/PingFang Medium.ttf");
+}
+@font-face {
+    font-family: PingFang Regular;
+    src: url("../fonts/PingFang Regular.ttf");
+}
+ul{
+	padding: 0;
+	margin: 0;
+}
+ul li{
+	list-style: none;
+}
+/* head CSS */
+.mui-bar-nav{
+	background: none;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+	background-color: #424955 !important;
+}
+.mui-bar-nav .mui-action-back {
+    line-height: 44px;
+    padding-top: 6px;
+	margin-left: 6px;
+}
+.mui-bar-nav .mui-action-back img{
+	width: 12px;
+}
+.mui-title {
+    color: #fff;
+    font-family: PingFang Medium;
+}
+.wallet_head_right {
+    position: absolute;
+    height: 44px;
+    width: 80px;
+    text-align: right;
+    right: 0;
+    padding-right: 15px;
+    line-height: 44px;
+    color: #fff;
+    font-family: PingFang Regular;
+    margin-bottom: 0;
+}
+/* foot CSS */
+.foot-tab-icon,.foot-tab-icon-act {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+}
+.foot-tab-icon img,.foot-tab-icon-act img {
+    width: 100%;
+}
+.foot-tab-icon-act{
+	display: none;
+}
+.mui-tab-item.mui-active .foot-tab-icon-act{
+	display: inline-block;
+}
+.mui-tab-item.mui-active .foot-tab-icon{
+	display: none;
+}
+.mui-bar{
+	-webkit-box-shadow: 0 0 1px rgba(0,0,0,0);
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+    background-color: #30363f;
+}
+.mui-tab-item{
+	padding-top: 6px;
+	padding-bottom: 4px;
+}
+.mui-tab-item p {
+    line-height: 16px;
+	color: #fff;
+	margin-bottom: 0px;
+	margin-top: -2px;
+	font-family: PingFang Medium;
+}
+.mui-active .mui-tab-label {
+    color: #2bc276;
+}

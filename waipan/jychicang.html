@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>交易记录</title>
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link type="text/css" href="../css/w.css" rel="stylesheet" />
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+	<body>
+		<header class="jyjlh">
+			<div class="mui-bar mui-bar-nav">
+		    <span class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></span>
+		    <h1 class="mui-title">交易记录</h1>
+		    <div class="zyzk-btn" onclick="window.location.href='shezhizyzk.html'">设置止盈止亏</div>
+			</div>
+		</header>
+		<div class="mui-content jyjlc">
+		<div class="mui-slider">
+			<div class="zhezao"></div>
+		    <div class="mui-slider-indicator mui-segmented-control">
+		        <div class="a1"><a class="mui-control-item mui-active" onclick="window.location.href='#item1'">持仓</a></div>
+		        <div class="a1"><a class="mui-control-item" onclick="window.location.href='#item2'">结算</a></div>
+		    </div>
+		    <div class="mui-slider-progress-bar mui-col-xs-4"></div>
+		    <div class="mui-slider-group">
+		        <div class="mui-slider-item mui-control-content mui-active" id="#item1">
+		            <ul class="mui-table-view">
+		                <li class="mui-table-view-cell">
+		                	<span>欧元(go)</span><time>10-17 11.20</time>
+		                	<div class="jy2">
+		                		<div>
+		                			<span class="jys">买跌:10手</span>
+		                			<span>止盈:0.00100点</span>
+									<span>止损:0.00200点</span>
+		                		</div>
+		                		<div>
+		                			<span class="jys">-0.14=-910.00</span>
+		                			<span>买入：53.280000</span>
+		                			<span>当前：53.14</span>
+		                		</div>
+		                		<div id='confirmBtn1' class="jy-btn">
+		                			平仓
+		                		</div>
+		                		<div id="info1"></div>
+		     				</div>
+		                </li>
+		                <li class="mui-table-view-cell">
+		                	<span>欧元(go)</span><time>10-17 11.20</time>
+		                	<div class="jy2">
+		                		<div>
+		                			<span class="jys">买跌:10手</span>
+		                			<span>止盈:0.00100点</span>
+									<span>止损:0.00200点</span>
+		                		</div>
+		                		<div>
+		                			<span class="jys">-0.14=-910.00</span>
+		                			<span>买入：53.280000</span>
+		                			<span>当前：53.14</span>
+		                		</div>
+		                		<div id='confirmBtn2' class="jy-btn">
+		                			平仓
+		                		</div>
+		                		<div id="info2"></div>
+		     				</div>
+		                </li>
+		            </ul>
+		        </div>
+		        <div class="mui-slider-item mui-control-content" id="#item2">
+		            <ul class="mui-table-view">
+		                <li class="mui-table-view-cell">
+		                	<span>欧元(go)</span><time>10-17 11.20</time>
+		                	<div class="jy3">
+		                		<div>
+		                			<span class="jys">买跌:10手</span>
+		                			<span>止盈:0.00100点</span>
+									<span>止损:0.00200点</span>
+		                		</div>
+		                		<div>
+		                			<span class="jys">-0.14=-910.00</span>
+		                			<span>买入：53.280000</span>
+		                			<span>当前：53.14</span>
+		                		</div>
+		                		<div class="jy-right">
+		                			<span>结算成功</span>
+		                			<span>系统平仓</span>
+		                		</div>
+		     				</div>
+		                </li>
+		                <li class="mui-table-view-cell">
+		                	<span>欧元(go)</span><time>10-17 11.20</time>
+		                	<div class="jy3">
+		                		<div>
+		                			<span class="jys">买跌:10手</span>
+		                			<span>止盈:0.00100点</span>
+									<span>止损:0.00200点</span>
+		                		</div>
+		                		<div>
+		                			<span class="jys">-0.14=-910.00</span>
+		                			<span>买入：53.280000</span>
+		                			<span>当前：53.14</span>
+		                		</div>
+		                		<div class="jy-right">
+		                		    <span>结算成功</span>
+		                			<span>系统平仓</span>          			
+		                		</div>
+		     				</div>
+		                </li>
+		            </ul>
+		        </div>
+		        
+		    </div>
+		</div>
+	</div>
+	<script>
+			var info = document.getElementById("info1"); document.getElementById("confirmBtn1").addEventListener('tap', function() { var btnArray = []; mui.confirm('您确定是否卖出？', btnArray, function(e) { if (e.index == 1) { info1.innerText = ''; } else { info1.innerText = '' } }) });
+			var info = document.getElementById("info2"); document.getElementById("confirmBtn2").addEventListener('tap', function() { var btnArray = []; mui.confirm('您确定是否卖出？', btnArray, function(e) { if (e.index == 1) { info2.innerText = ''; } else { info2.innerText = '' } }) });
+	</script>
+	</body>
+</html>

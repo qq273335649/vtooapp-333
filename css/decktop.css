@@ -161,7 +161,7 @@ padding: 0.1rem;
 width: 0.7rem;
 height: 0.7rem;
 display:block;
-background: url(../img/xiayibu.png) no-repeat;
+background-image: url(../img/xiayibu.png);
 background-size:100%;
 position:absolute;
 }
@@ -209,53 +209,88 @@ position:absolute;
 	
 }
 .yzmatu{
-  	width:25%;
-  	height:90%;
-	position:absolute;
-  	top:5%;
-    right: 5%
+	width: 25%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background-color: #424955;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 0.45rem;
+    font-style: italic;
 
 }
 
 .tubiao1{
-  height: 45%;
-  width: 0.55rem;
-  margin:0;
-  padding:0;
-  display:block;
-  position:absolute;
-  top:25%;
-  left:5%;
-  
-}
-
-.tubiao1 {
+	height: 56%;
+	width: 0.49rem;
+	margin: 0;
+	padding: 0;
+	display: block;
+	position: absolute;
+	top: 21%;
+	left: 4.5%;
 	background-image: url(../img/shouji.png);
 	background-size: 100% 100%;
 }
 .tubiao2{
-  height:45%;
-  width: 0.47rem;
-  margin:0;
-  padding:0;
-  display:block;
-  background:url(../img/mima.png) no-repeat;
-  background-size:100%;
-  position:absolute;
-  top:25.5%;
-  left:5%;
+	height: 54%;
+	width: 0.38rem;
+	margin: 0;
+	padding: 0;
+	display: block;
+	position: absolute;
+	top: 20%;
+	left: 5%;
+	background-image: url(../img/mima.png);
+	background-size: 100% 100%;
 }
 .tubiao3{
-  height:45%;
-  width: 0.47rem;
-  margin:0;
-  padding:0;
-  display:block;
-  background:url(../img/yanzheng.png) no-repeat;
-  background-size:100%;
-  position:absolute;
-  top:25%;
-  left:5%;
+	height: 55%;
+	width: 0.4rem;
+	margin: 0;
+	padding: 0;
+	display: block;
+	background-size: 100%;
+	position: absolute;
+	top: 25%;
+	left: 5%;
+	background-image: url(../img/yanzheng.png);
+	background-size: 100% 100%;
+}
+.tubiao4{
+	height: 55%;
+	width: 0.4rem;
+	margin: 0;
+	padding: 0;
+	display: block;
+	background-size: 100%;
+	position: absolute;
+	top: 25%;
+	left: 5%;
+	background-image: url(../img/jymima.png);
+	background-size: 100% 100%;
+}
+.tubiao5{
+	height: 55%;
+	width: 0.4rem;
+	margin: 0;
+	padding: 0;
+	display: block;
+	background-size: 100%;
+	position: absolute;
+	top: 25%;
+	left: 5%;
+	background-image:url(../img/yqm.png);
+	background-size: 100% 100%;
+}
+.btn-block{
+	padding: 0;
 }
 
 

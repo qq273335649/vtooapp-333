@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>设置止盈止亏</title>
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link type="text/css" href="../css/w.css" rel="stylesheet" />
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+	<body>
+		<header class="jyjlh">
+			<div class="mui-bar mui-bar-nav">
+		    <span class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></span>
+		    <h1 class="mui-title">设置止盈止亏</h1>
+			</div>
+		</header>
+		<div class="mui-content zyzk">
+			<ul class="mui-table-view">
+			        <li class="mui-table-view-cell">
+			            <a>
+			                     盈利
+			            <div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='100'>
+						  <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+						  <input class="mui-numbox-input" type="number" />
+						  <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+						</div>
+						点时，触发卖出
+			            </a>
+			        </li>
+			        <li class="mui-table-view-cell">
+			            <a>
+			         	亏损
+			         	<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='100'>
+						  <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+						  <input class="mui-numbox-input" type="number" />
+						  <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+						</div>
+			         	点时，触发卖出   	
+			            </a>
+			        </li>
+			    </ul>
+			<input type="submit" class="submit_btn" value="确定"/>
+		</div>	
+	</body>
+</html>
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>恒生指数交易规则</title>
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/personal.css"/>
+    <link type="text/css" href="../css/w.css" rel="stylesheet" />
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+	<header class="gz">
+			<div class="mui-bar mui-bar-nav">
+		    <span class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" onclick="window.location.href='Waispjiaoyi.html'"></span>
+		    <h1 class="mui-title">买涨-恒生指数</h1>
+			</div>
+	</header>
+	<div class="mui-content gzc">
+		<div class="rjmxc">
+				<ul class="mui-table-view">
+				    <li class="mui-table-view-cell mzmtv">
+				        <span class="span_left jysl">交易数量</span>
+				           <div class="span_right mzbtn">
+				           	<div class="mui-segmented-control">
+				           		<a class="mui-control-item mui-active" href="#item1">1手</a>
+				           		<a class="mui-control-item">2手</a>
+				           		<a class="mui-control-item">3手</a>
+				           		<a class="mui-control-item">5手</a>
+				           		<a class="mui-control-item">8手</a>
+				           		<a class="mui-control-item">10手</a>
+				           		</div>
+				           </div>
+				    </li>
+				    <li class="mui-table-view-cell">
+				        <a><span class="span_left">触发止盈</span>
+				           <span class="span_right">
+				           		<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='100'>
+						  			<button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+						  			<input class="mui-numbox-input" type="number" />
+						  			<button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+				           		</div>
+				           </span>
+				        </a>
+				    </li>
+				    <li class="mui-table-view-cell">
+				        <a><span class="span_left">触发止损</span>
+				           <span class="span_right">
+					           <div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='100'>
+							  		<button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+							  		<input class="mui-numbox-input" type="number" />
+							  		<button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+					           	</div>
+				           </span>
+				        </a>
+				    </li>
+				    <li class="mui-table-view-cell mzmtv">
+				        <span class="span_left jysl">交易数量</span>
+				           <div class="span_right mzbtn">
+				           	<div class="mui-segmented-control">
+				           		<a class="mui-control-item mui-active" href="#item1">1</a>
+				           		<a class="mui-control-item">2</a>
+				           		<a class="mui-control-item">3</a>
+				           		<a class="mui-control-item">4</a>
+				           		<a class="mui-control-item">5</a>
+				           		</div>
+				           </div>
+				    </li>
+				    <li class="mui-table-view-cell">
+				        <a><span class="span_left">交易>交易综合费</span>
+				        	<span class="span_right">
+				        		100
+				        	</span>
+				        </a>
+				    </li>
+				    <li class="mui-table-view-cell">
+				        <a><span class="span_left">合计履约金</span>
+				           <span class="span_right">
+				           		101
+				           </span>
+				        </a>
+				    </li>
+				    <li class="mui-table-view-cell">
+				        <a><span class="span_left">点位价</span>
+				           <span class="span_right">
+				           	<h6>每1点的价格为：1.00元</h6>
+				           </span>
+				        </a>
+				    </li>
+				    <li class="mui-table-view-cell">
+				        <a><span class="span_left">即时买入</span><span class="span_right">买入<h5 class="mzh5">25911.96</h5></span></a>
+				    </li>
+				</ul>
+			</div>		
+	</div>
+	<footer class="fdibu mzmd">
+			<span><h5>投资有风险，入市须谨慎</h5></span>
+			<input type="submit" class="submit_btn" value="确定买涨"/>
+	</footer>
+</body>	
+</html>

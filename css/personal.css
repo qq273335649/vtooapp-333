@@ -1,0 +1,98 @@
+@charset "utf-8";
+html,body,.mui-content{
+	background-color: #424955;
+}
+.mui-content{
+	padding-bottom: 55px;
+}
+.my_head{
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-family: PingFang Regular;
+}
+.my_head_infor {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #616873;
+}
+.my_head_photo {
+    width: 55px;
+    height: 55px;
+	float: left;
+    overflow: hidden;
+}
+.my_head_infor p {
+    margin-bottom: 0;
+	font-size: 0.9rem;
+	font-family: arial;
+}
+.my_head_photo img {
+    width: 100%;
+}
+.my_head_name {
+	float: left;
+    margin-left: 11px;
+}
+.my_vipName {
+    color: #fff;
+	margin-top: 5px;
+}
+.my_vipLevel {
+    color: #f3ad1d;
+	margin-top: 5px;
+}
+.my_head_rightIcon{
+	float: right;
+	width: 10px;
+	line-height: 55px;
+}
+.my_head_rightIcon img{
+	width: 100%;
+}
+.my_head_message p {
+    margin-bottom: 0;
+}
+.my_head_message {
+    padding: 15px 0;
+}
+.my_head_message p {
+    margin-bottom: 0;
+    color: #2bc276;
+}
+.my_head_message p img {
+    vertical-align: middle;
+    margin-right: 3px;
+    width: 14px;
+    margin-top: -2px;
+}
+.line_gradient{
+	background: linear-gradient(to right, #585f6a, #3e495b); 
+}
+.personal_con{
+	margin-top: 20px;
+	font-family: PingFang Regular;
+}
+.personal_con ul li {
+    margin-bottom: 15px;
+    padding: 18px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+}
+.personal_con ul li p{
+	margin-bottom: 0;
+	font-size: 1rem;
+	color: #fff;
+}
+.my_con_rightIcon{
+	width: 10px;
+}
+.my_con_rightIcon img{
+	width: 100%;
+}
+.clearfix::after{
+	width: 100%;
+	display: block;
+	content: "";
+	clear: both;
+}

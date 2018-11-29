@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>个人信息</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link type="text/css" href="css/b.css" rel="stylesheet" />
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <div class="grxxheader">
+		    <span class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" onclick="window.location.href='personal.html'"></span>
+		    <h1 class="mui-title">个人信息</h1>
+			</div>
+		</header>
+		<div class="mui-content">
+		    <div class="grxx">
+				<ul class="mui-table-view">
+				    <li class="mui-table-view-cell">
+				        <a href="#sheet2" class="mui-navigate-right jiantou">头像
+				        <div class=" mui-navigate-right-myphoto"><img src="img/my_photo.png"/></div>
+				        </a>
+				    </li>
+				    <li class="mui-table-view-cell">
+				        <a href="#">用户名
+				        <div class=" mui-navigate-right-phone ">15687654321</div>
+				        </a>
+				    </li>
+				    <li class="mui-table-view-cell">
+				        <a href="#sheet1" class="mui-navigate-right jiantou" >性别
+					        <div class=" mui-navigate-right-fix ">男</div>
+					        
+				        </a>
+				    </li>
+				</ul>		    	
+		    	
+		    </div>
+		<div id="sheet1" class="mui-popover mui-popover-bottom mui-popover-action ">
+		    <!-- 可选择菜单 -->
+		    <ul class="mui-table-view">
+		      <li class="mui-table-view-cell">
+		        <a href="#">男</a>
+		      </li>
+		      <li class="mui-table-view-cell">
+		        <a href="#">女</a>
+		      </li>
+		    </ul>
+		    <!-- 取消菜单 -->
+		    <ul class="mui-table-view">
+		      <li class="mui-table-view-cell">
+		        <a href="#sheet1"><b>取消</b></a>
+		      </li>
+		    </ul>
+		</div>
+		<div id="sheet2" class="mui-popover mui-popover-bottom mui-popover-action ">
+		    <!-- 可选择菜单 -->
+		    <ul class="mui-table-view">
+		      <li class="mui-table-view-cell">
+		        <a href="#">拍照</a>
+		      </li>
+		      <li class="mui-table-view-cell">
+		        <a href="#">从手机相册选择</a>
+		      </li>
+		    </ul>
+		    <!-- 取消菜单 -->
+		    <ul class="mui-table-view">
+		      <li class="mui-table-view-cell">
+		        <a href="#sheet2"><b>取消</b></a>
+		      </li>
+		    </ul>
+		</div>
+							
+		</div>
+	</body>
+</html>

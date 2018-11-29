@@ -6,10 +6,10 @@
     
     <script>!function(e){function t(a){if(i[a])return i[a].exports;var n=i[a]={exports:{},id:a,loaded:!1};return e[a].call(n.exports,n,n.exports,t),n.loaded=!0,n.exports}var i={};return t.m=e,t.c=i,t.p="",t(0)}([function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i=window;t["default"]=i.flex=function(normal,e,t){var a=e||100,n=t||1,r=i.document,o=navigator.userAgent,d=o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),l=o.match(/U3\/((\d+|\.){5,})/i),c=l&&parseInt(l[1].split(".").join(""),10)>=80,p=navigator.appVersion.match(/(iphone|ipad|ipod)/gi),s=i.devicePixelRatio||1;p||d&&d[1]>534||c||(s=1);var u=normal?1:1/s,m=r.querySelector('meta[name="viewport"]');m||(m=r.createElement("meta"),m.setAttribute("name","viewport"),r.head.appendChild(m)),m.setAttribute("content","width=device-width,user-scalable=no,initial-scale="+u+",maximum-scale="+u+",minimum-scale="+u),r.documentElement.style.fontSize=normal?"50px": a/2*s*n+"px"},e.exports=t["default"]}]);  flex(false,100, 1);</script>
     <title>登录</title>
+    
     <link type="text/css" rel="stylesheet" href="css/decktop.css" />
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
-    <link type="text/css" rel="stylesheet" href="css/character.css" />
     <link type="text/css" rel="stylesheet" href="css/theme.css" />
     
     
@@ -18,7 +18,7 @@
 </head>
 
 <body style="background-color: #424955">
-	<div class="biaoti"><div class="xiayibu"></div>登录</div>
+	<div class="biaoti">登录</div>
 
 <div>
     <div class="zhutilogo">
@@ -42,7 +42,7 @@
       <div class="shuru btn-block srpos">
     		<div class=tubiao2></div>
       <input type="text" id="code_input"  class="qxs-ic_vertify qxs-icon"  placeholder="请输入验证码" v-model="password">
-      	<div id="v_container" class="yzmatu"></div>
+      	<div id="check-code" style="overflow: hidden;"><div id="v_container" class="yzmatu"></div></div>
       	</div>
       
       <!--<button class="login_btn el-button el-button&#45;&#45;primary is-round" type="primary" round>登录</button>-->
@@ -53,16 +53,63 @@
       </div>
     </div>
   </div>
-  <script src="js/gVerify.js"></script>
-<script>
-        var verifyCode = new GVerify("v_container");
-        document.getElementById("my_button").onclick = function(){
-            var res = verifyCode.validate(document.getElementById("code_input").value);
-            if(res){
-                alert("验证正确");
-            }else{
-                alert("验证码错误");
-            }
-        }
-    </script>
+  
+<script src="js/jquery-2.1.0.js"></script>
+	<script type="text/javascript">
+	/**
+	 * 验证码
+	 * @param {Object} o 验证码长度
+	 */
+	$.fn.code_Obj = function(o) {
+		var _this = $(this);
+		var options = {
+			code_l: o.codeLength,//验证码长度
+			codeChars: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+				'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+				'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
+			],
+			codeColors: ['#f44336', '#009688', '#cddc39', '#03a9f4', '#9c27b0', '#5e4444', '#9ebf9f', '#ffc8c4', '#2b4754', '#b4ced9', '#835f53', '#aa677e'],
+			code_Init: function() {
+				var code = "";
+				var codeColor = "";
+				var checkCode = _this.find("#v_container");
+				for(var i = 0; i < this.code_l; i++) {
+					var charNum = Math.floor(Math.random() * 52);
+					code += this.codeChars[charNum];
+				}
+				for(var i = 0; i < this.codeColors.length; i++) {
+					var charNum = Math.floor(Math.random() * 12);
+					codeColor = this.codeColors[charNum];
+				}
+				
+				$(".yzmatu").html(code);
+				if(checkCode) {
+					checkCode.css('color', codeColor);
+					checkCode.className = "code";
+					checkCode.text(code);
+					checkCode.attr('data-value', code);
+				}
+			}
+		};
+
+		options.code_Init();//初始化验证码
+		$("#v_container").click(function(){
+			options.code_Init();
+		})
+		_this.find("#v_container").bind('click', function() {
+			options.code_Init();
+		});
+	};
+</script>
+<script type="text/javascript">
+	/**
+	 * 验证码
+	 * codeLength:验证码长度
+	 */
+	$('#check-code').code_Obj({
+		codeLength: 4
+	});
+</script>
+
   </body>
+  </html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>推广赚钱</title>
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/wallet.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/walletDetail.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/tg.css" />
+	<link rel="stylesheet" type="text/css" href="../css/tdtp.css" />
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-pull-left"><img src="../img/head_back_icon.png" ></a>
+		<h1 class="mui-title">推广赚钱</h1>
+	</header>
+	<div class="mui-content tg">
+		<div class="wallet_con">
+			<div class="zjhz">
+		    <div class="tdtp">
+				<ul class="mui-table-view">
+				    <li class="mui-table-view-cell67">
+				    	<a>可用佣金</a><span>0.00</span><div class="mui-btn" onclick="window.location.href='Waitiqu.html'">提取</div>
+				    </li>
+				    <li class="mui-table-view-cell67">
+				    	<a>佣金比例<span class="quanzc">10%</span></a>
+				    </li>
+				    <li class="mui-table-view-cell67">
+				    	<a>我的用户<span class="quanzc">0</span></a>
+				    </li>
+				    <li class="mui-table-view-cell67">
+				        <a>交易手数<span class="quanzc">0</span></a>
+				    </li>
+				</ul>		    	
+		    </div>
+		   </div>
+			<div class="walletTo_box">
+				<div class="walletTo_box_qrCode">
+					<p class="walletTo_box_qrCode_img"><img src="" ></p>
+					<p class="walletTo_box_qrCode_no">564634</p>
+				</div>
+				<div class="walletTo_box_copy">
+					<p class="walletTo_box_copy_address">1ABCTWcLdvkAvvA4Nq6n26MygFRD9t83KK</p>
+					<textarea id="walletTo_input" style="opacity: 0;position: absolute;"></textarea>
+					<!-- <input class="walletTo_box_copy_address" value="1ABCTWcLdvkAvvA4Nq6n26MygFRD9t83KK" readonly="readonly" /> -->
+					<p class="walletTo_box_copy_btn" onclick="copyText()">复制地址</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		
+		function copyText() {
+			var text = document.querySelector(".walletTo_box_copy_address").innerText;
+			var input = document.getElementById("walletTo_input");
+			input.value = text; // 修改文本框的内容
+			input.select(); // 选中文本
+			document.execCommand("copy"); // 执行浏览器复制命令
+			mui.toast("复制成功");
+		}
+	</script>
+</body>
+</html>

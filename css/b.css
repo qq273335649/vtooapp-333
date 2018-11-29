@@ -1,0 +1,309 @@
+
+
+@font-face {
+    font-family: PingFang Regular ;
+    src: url("../fonts/PingFang Regular.ttf");
+    }
+@font-face {
+    font-family: PingFang Medium ;
+    src: url("../fonts/PingFang Medium.ttf");
+    }
+
+
+.mui-btn-green, .mui-btn-positive, .mui-btn-success {
+    color: #fff;
+    border: 1px solid #2bc276;
+    background-color: #2bc276;
+}
+.mui-btn-block {
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    margin: auto;
+}
+.mui-content {
+    background-color: #efeff4;
+    -webkit-overflow-scrolling: touch;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.pmc{
+	padding-left: 8%;
+	padding-right: 8%;
+}
+.mui-input-row label {
+    font-family: 'Helvetica Neue',Helvetica,sans-serif;
+    line-height: 1.1;
+    float: left;
+    width: 35%;
+    padding: 11px 15px;
+    color: #ffffff;
+}
+.mui-input-group {
+    position: relative;
+    padding: 0;
+    padding-bottom: 15%;
+    padding-top: 20%;
+	background: none;
+	}
+.mui-input-group:before{
+	height: 0;
+	}
+	.mui-bar{
+	background:none;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+	}
+.mui-input-row label{
+	font-size: 0.9rem;
+	width: 80px;
+	font-family: PingFang Regular;
+}
+.mui-input-row label~input, .mui-input-row label~select, .mui-input-row label~textarea{
+	width: 70%;
+	font-size: 0.9rem;
+	color: #CCCCCC;
+	font-family: PingFang Medium;
+}
+.qrxmm label{
+	width: 90px;
+	margin-right: 0;
+	padding-right: 0;
+	font-family: PingFang Regular;
+	
+}
+.qrxmm input{
+	padding-right: 0;
+	font-size: 0.9rem;
+	width: 60% !important;
+	color: #CCCCCC;
+	font-family: PingFang Medium;
+}
+.mui-input-group .mui-input-row{
+	margin-bottom: 3%;
+}
+.mui-btn, button, input[type=button], input[type=reset], input[type=submit]{
+	line-height: 0.5;
+}
+.mui-title{
+	color: #FFFFFF;
+	font-family: PingFang Regular;
+}
+a{
+	color: #FFFFFF;
+}
+.mui-input-clear::-webkit-input-placeholder{
+	color: #CCCCCC;
+}
+html,body,.mui-content{
+	background: #424955;
+}
+.mui-input-group:after{
+	height: 0;
+}
+.yzma{
+	float: right;
+	display: inline-block;
+	color: #30ac70;
+	border: 1px solid #30ac70;
+	border-radius: 30px;
+  	position:absolute;
+  	top:15%;
+  	right:7%;
+  	font-size:100%;
+  	font-family: PingFang Regular;
+	
+}
+.grxx .mui-table-view{
+	background: 0 !important;
+}
+.mui-segmented-control{
+	border:0;
+}
+.mui-segmented-control .mui-control-item{
+	border-left: 0;
+	border-bottom: 3px solid transparent;
+	color: #FFFFFF;
+	font-family: PingFang Regular;
+}
+.mui-segmented-control .mui-control-item.mui-active{
+	background: 0 !important;
+	color: #2AC845;
+	border-bottom: 3px solid #2AC845;
+	font-family: PingFang Regular;
+	
+}
+.mui-slider-indicator{
+	text-align: left;
+}
+.mui-segmented-control{
+	display:flex;
+	display: -webkit-flex;
+}
+.a1{
+	width:15%;
+}
+.mui-segmented-control{
+	border-radius: 0;
+}
+.mui-segmented-control .mui-control-item{
+	display: initial;
+}
+.grxx .mui-table-view-cell{
+	font-family: PingFang Regular;
+	color: #EFEFF4;
+}
+
+.grxx .mui-table-view:before{
+	height: 0;
+}
+.grxx .mui-table-view:after{
+	height: 0;
+}
+
+.mui-navigate-right-phone{
+    font-family: PingFang Regular;
+    font-size: inherit;
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    display: inline-block;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-decoration: none;
+    color: #2AC845;
+    -webkit-font-smoothing: antialiased;
+}
+.mui-navigate-right-fix{
+	font-family: PingFang Regular;
+    font-size: inherit;
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    display: inline-block;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-decoration: none;
+    color: #2AC845;
+    -webkit-font-smoothing: antialiased;
+}
+
+.mui-navigate-right-myphoto{
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    bottom: 15%;
+    right: 12%;
+    /*background:url(../img/my_photo.png) no-repeat;*/
+    /*background-size: 90%;*/
+}
+.mui-navigate-right-myphoto img{
+	position: absolute;
+    width: 2.7rem;
+    height: 2.6rem;
+    bottom: 0%;
+    right: 12%;
+}
+.grxx .mui-table-view-cell::after,ul.mui-table-view::after{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 1px;
+	content: '';
+	-webkit-transform: scaleY(.5);
+	transform: scaleY(.5);
+	background-color: #848487;
+	left: 12px;
+}
+.grxx .mui-table-view-cell{
+	font-family: PingFang Regular;
+}
+.mui-switch{
+	border: 0;
+	height: 26px;
+}
+.grxx .mui-table-view li{
+	margin-bottom: 5%;
+}
+.grxx .mui-table-view{
+	margin-top: 10%;
+}
+.mui-title{
+	font-size: 1.2rem;
+}
+.mui-switch .mui-switch-handle{
+	left: 2.5px;
+}
+.mui-input-clear{
+	color: #080808;
+	font-family: PingFang Medium;
+}
+.mui-input-clear::-moz-placeholder{
+	color: #929292;
+}
+.mui-input-clear::-webkit-input-placeholder{
+	color: #929292;
+}
+.mui-input-group .mui-input-row{
+	margin-bottom: 10%;
+}
+.mui-but{
+	margin-top: 50%;
+}
+.mui-btn-block {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    margin: 0;
+    position: absolute;
+    width: 94%;
+    top: 60%;
+}
+.emailnext{
+	float: right;
+	display: inline-block;
+	color: #2BC276;
+	border-radius: 30px;
+  	position:absolute;
+  	top:25%;
+  	right:7%;
+  	font-size:70%;
+}
+.jiantou::after{
+	color: #2BC276;
+}
+.grxx .mui-table-view-cell>a:not(.mui-btn){
+	overflow: inherit !important;
+}
+.grxx .mui-table-view-cell>a:not(.mui-btn).mui-active{
+	background-color: #424955;
+}
+.grxx .mui-table-view-cell{
+	overflow: inherit;
+	margin-bottom: 0!important;
+	padding: 15px;
+}
+.tuandui{
+	color: #2AC845;
+	float: right;
+}
+#sheet1,#sheet2{
+	width: 95%;
+}
+.mui-popover.mui-popover-action{
+	bottom: 1%;
+}
+#sheet1 ul li a b,#sheet1 ul li a,#sheet2 ul li a b,#sheet2 ul li a{
+	font-family: PingFang Medium;
+	font-weight: normal;
+}
+.grxxheader span{
+	color: #FFFFFF;
+}
+

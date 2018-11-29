@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/home.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+		<style>
+
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title home-title">VTOO</h1>
+		</header>
+		<div class="mui-content">
+			<div class="home_banner">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="img/banner1.png"></div>
+						<div class="swiper-slide"><img src="img/banner2.png"></div>
+						<div class="swiper-slide"><img src="img/banner3.png"></div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<div class="home_notice">
+				<span><img src="img/home_notice_icon.png" /></span>
+				<div class="home_notice_con" id="marquee2">
+					<p>提示：这是首页的公告，我会滚动哦！</p>
+				</div>
+			</div>
+			<div class="home_con">
+				<div class="home_conBox clearfix">
+					<div class="home_conBox_list">
+						<p class="home_conBox_list_img"><img src="img/home_list_icon1.png" ></p>
+						<p class="home_conBox_list_btn">微盘</p>
+					</div>
+					<div class="home_conBox_list">
+						<p class="home_conBox_list_img"><img src="img/home_list_icon2.png" ></p>
+						<p class="home_conBox_list_btn">外盘</p>
+					</div>
+					<div class="home_conBox_list">
+						<p class="home_conBox_list_img"><img src="img/home_list_icon3.png" ></p>
+						<p class="home_conBox_list_btn">时时彩</p>
+					</div>
+					<div class="home_conBox_list">
+						<p class="home_conBox_list_img"><img src="img/home_list_icon4.png" ></p>
+						<p class="home_conBox_list_btn_none">竞猜</p>
+					</div>
+					<div class="home_conBox_list">
+						<p class="home_conBox_list_img"><img src="img/home_list_icon5.png" ></p>
+						<p class="home_conBox_list_btn_none">即时游戏</p>
+					</div>
+					<div class="home_conBox_list">
+						<p class="home_conBox_list_img"><img src="img/home_list_icon6.png" ></p>
+						<p class="home_conBox_list_btn_none">棋牌</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" onclick="window.location.href='home.html'">
+				<span class="foot-tab-icon"><img src="img/bar_home_icon.png" /></span>
+				<span class="foot-tab-icon-act"><img src="img/bar_home_iconAct.png" /></span>
+				<p><span class="mui-tab-label">首页</span></p>
+			</a>
+			<a class="mui-tab-item" onclick="window.location.href='wallet.html'">
+				<span class="foot-tab-icon"><img src="img/bar_wallet_icon.png" /></span>
+				<span class="foot-tab-icon-act"><img src="img/bar_wallet_iconAct.png" /></span>
+				<p><span class="mui-tab-label">钱包</span></p>
+			</a>
+			<a class="mui-tab-item" onclick="window.location.href='personal.html'">
+				<span class="foot-tab-icon"><img src="img/bar_personal_icon.png" /></span>
+				<span class="foot-tab-icon-act"><img src="img/bar_personal_iconAct.png" /></span>
+				<p><span class="mui-tab-label">个人</span></p>
+			</a>
+		</nav>
+		<script src="js/swiper.min.js"></script>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				slidesPerView: 1,
+				loop: true,
+				autoplay: {
+					delay: 3000,
+					disableOnInteraction: false,
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+			});
+		</script>
+	</body>
+</html>
